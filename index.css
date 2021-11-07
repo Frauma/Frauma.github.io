@@ -21,6 +21,15 @@ p {
 	font-size: 1.25em;
 }
 
+video {
+	object-fit: cover;
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
 .dark-theme {
     background-color: rgb(30, 31, 28);
 	color: #f2f2f2;
@@ -41,6 +50,7 @@ p {
 .center-content {
     text-align: center;
     margin: 0 auto;
+	margin-bottom: 170px;
 }
 
 .h-box {
@@ -69,13 +79,13 @@ video {
 /* HOME */
 
 #info {
-  height: 100vh;
+	height: 100vh;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  
-  /* background-image: url(https://cdnjs.cloudflare.com/ajax/libs/vegas/2.3.1/overlays/02.png); */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+	background-image: url(https://cdnjs.cloudflare.com/ajax/libs/vegas/2.3.1/overlays/02.png);
 }
 
 
