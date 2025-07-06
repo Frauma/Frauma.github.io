@@ -156,6 +156,31 @@ video {
 	background-image: url(https://cdnjs.cloudflare.com/ajax/libs/vegas/2.3.1/overlays/02.png);
 }
 
+#datenschutz {
+	filter: drop-shadow(-2px 2px 0px rgba(0, 0, 0, 0.3));
+	font-family: 'Berlin';
+	padding: 62px;
+	
+	font-size: 80px;
+	
+	color: #ffffff;
+	letter-spacing: 8px;
+}
+
+#datenschutz p {
+	/* font-family: 'Roboto'; */
+	letter-spacing: 3px;
+    font-size: 25px;
+}
+
+#datenschutz a:not(hover) {
+	color: rgb(200,200,200);
+}
+
+#datenschutz a:hover {
+	color: rgb(255, 255, 255);
+}
+
 #frauma-logo {
 	font-family: 'Berlin';
 	color: #ffffff;
