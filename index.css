@@ -8,6 +8,11 @@
 	src: url('res/font/berlin.bold.ttf');
 }
 
+@font-face {
+	font-family: 'RobotoMono';
+	src: url('res/font/RobotoMono-VariableFont_wght.ttf');
+}
+
 head, body {
     margin: 0;
     padding: 0;
@@ -157,20 +162,26 @@ video {
 }
 
 #datenschutz {
-	filter: drop-shadow(-2px 2px 0px rgba(0, 0, 0, 0.3));
-	font-family: 'Berlin';
-	padding: 62px;
-	
-	font-size: 80px;
+	font-family: 'RobotoMono';
+	padding: 48px;
 	
 	color: #ffffff;
-	letter-spacing: 8px;
 }
 
 #datenschutz p {
-	/* font-family: 'Roboto'; */
+    font-size: 12px;
+}
+
+#datenschutz h1 {
+	font-family: 'Berlin';
+	font-size: 24px;
 	letter-spacing: 3px;
-    font-size: 25px;
+}
+
+#datenschutz a {
+	font-family: 'Berlin';
+	font-size: 24px;
+	letter-spacing: 3px;
 }
 
 #datenschutz a:not(hover) {
