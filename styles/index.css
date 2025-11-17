@@ -1,0 +1,310 @@
+@font-face {
+	font-family: 'Roboto';
+	src: url('../res/font/Roboto/Roboto-Light.ttf');
+}
+
+@font-face {
+	font-family: 'Berlin';
+	src: url('../res/font/berlin.bold.ttf');
+}
+
+@font-face {
+	font-family: 'RobotoMono';
+	src: url('../res/font/RobotoMono-VariableFont_wght.ttf');
+}
+
+head, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+	font-family: 'Roboto';
+	background-color: rgb(20, 20, 20);
+}
+
+h1 {
+	font-size: 5em;
+}
+
+p {
+	font-size: 1.5em;
+	font-size: 1.25em;
+}
+
+a {
+	text-decoration: none; /* no underline */
+  }
+
+video {
+	object-fit: cover;
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+.loader {
+	z-index: 9999;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: rgb(0, 0, 0);
+	transition: opacity 0.75s, visibility 0.75s;
+}
+  
+.loader--hidden {
+	opacity: 0;
+	visibility: hidden;
+}
+
+.loader::after {
+	content: "";
+	width: 75px;
+	height: 75px;
+	border: 5px solid rgb(0, 0, 0);
+	border-top-color: #dddddd;
+	border-radius: 50%;
+	animation: loading 0.75s ease infinite;
+}
+
+@keyframes loading {
+	from {
+	  transform: rotate(0turn);
+	}
+	to {
+	  transform: rotate(1turn);
+	}
+}
+
+.dark-theme {
+    background-color: rgb(30, 31, 28);
+	color: #f2f2f2;
+	color: rgb(200,200,200);
+}
+
+.relative {
+	position: relative;
+}
+
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.center-content {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.h-box {
+	display: flex;
+  	align-items: center;
+	justify-content: center;
+}
+
+.v-box {
+	display: flex;
+	flex-direction: column;
+  	align-items: center;
+	justify-content: space-evenly;
+}
+
+video {
+	object-fit: cover;
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+  }
+
+  .anim-fade-up-disabled {
+	opacity: 50;
+	/* filter: blur(5px); */
+	transform: translateY(30%);
+	transition: all 1s;
+}
+
+.social-img {
+	width: 48px;
+	height: 48px;
+	margin: 1rem;
+}
+
+.social-img:hover {
+	filter: brightness(100%) hue-rotate(111deg) saturate(300%);
+	transition: 0s;
+}
+
+.social-img:not(hover) {
+	filter: sepia(0%) saturate(0%) brightness(70%) hue-rotate(0deg);
+	transition: 0.3s;
+}
+
+/* HOME */
+
+#info {
+	height: 100vh;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+	background-image: url('../res/img/overlay.png');
+}
+
+#frauma-logo {
+	font-family: 'Berlin';
+	color: #ffffff;
+	font-size: 60px;
+	letter-spacing: 11px;
+	padding: 28px;
+	position: fixed;
+	top: 0;
+	left: 8px;
+}
+
+#contact {
+	border-style: dashed;
+	border-radius: 35px;
+	border-width: 4px;
+	border-color: rgb(200,200,200);
+
+	filter: drop-shadow(-2px 2px 0px rgba(0, 0, 0, 0.3));
+	font-family: 'Berlin';
+	padding: 62px;
+	
+	font-size: 80px;
+	
+	color: #ffffff;
+	letter-spacing: 8px;
+}
+
+#contact p {
+	/* font-family: 'Roboto'; */
+	letter-spacing: 3px;
+    font-size: 25px;
+}
+
+#contact a:not(hover) {
+	color: rgb(200,200,200);
+}
+
+#contact a:hover {
+	color: rgb(255, 255, 255);
+}
+
+.footer {
+	color: #474747;
+	font-size: 20px;
+	padding: 18px;
+	position: fixed;
+	bottom: 0;
+}
+
+#coming-soon {
+	left: 0;
+}
+
+#source {
+	right: 0;
+}
+
+#datenschutz a {
+	font-family: 'Berlin';
+	font-size: 24px;
+	letter-spacing: 3px;
+}
+
+#coming-soon a:not(hover) {
+	color: #474747;
+}
+
+#coming-soon a:hover {
+	color: rgb(155, 155, 155);
+}
+
+/* OPERA */
+#detach-button-host {
+	display: none;
+}
+
+@media (max-width:568px) {
+	
+	.footer {
+		font-size: 12px;
+		padding: 8px;
+	}
+
+	#contact {
+		filter: drop-shadow(-1px 1px 0px rgba(0, 0, 0, 0.3));
+		border-radius: 35px;
+		border-width: 2px;
+		padding: 16px;
+		
+		font-size: 26px;
+		
+		color: #ffffff;
+		letter-spacing: 8px;
+	}
+	
+	#contact p {
+		/* font-family: 'Roboto'; */
+		letter-spacing: 3px;
+		font-size: 13px;
+	}
+
+	.social-img {
+		width: 28px;
+		height: 28px;
+		margin: 0.5rem;
+	}
+
+	#frauma-logo {
+		left: 2px;
+	}
+}
+
+@media (max-width:1367px) {
+	
+	.footer {
+		font-size: 12px;
+		padding: 8px;
+	}
+
+	#contact {
+		filter: drop-shadow(-1px 1px 0px rgba(0, 0, 0, 0.3));
+		border-radius: 35px;
+		border-width: 2px;
+		padding: 16px;
+		
+		font-size: 26px;
+		
+		color: #ffffff;
+		letter-spacing: 8px;
+	}
+	
+	#contact p {
+		/* font-family: 'Roboto'; */
+		letter-spacing: 3px;
+		font-size: 13px;
+	}
+
+	.social-img {
+		width: 28px;
+		height: 28px;
+		margin: 0.5rem;
+	}
+
+	#frauma-logo {
+		left: 2px;
+	}
+}
