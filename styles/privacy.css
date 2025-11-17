@@ -9,9 +9,19 @@
     font-size: 12px;
 }
 
+#datenschutz li {
+    font-size: 12px;
+}
+
 #datenschutz h1 {
 	font-family: 'Berlin';
-	font-size: 48px;
+	font-size: 36px;
+	letter-spacing: 3px;
+}
+
+#datenschutz h2 {
+	font-family: 'Berlin';
+	font-size: 26px;
 	letter-spacing: 3px;
 }
 
