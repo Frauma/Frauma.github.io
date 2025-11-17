@@ -1,0 +1,30 @@
+#datenschutz {
+	font-family: 'RobotoMono';
+	padding: 48px;
+	
+	color: #ffffff;
+}
+
+#datenschutz p {
+    font-size: 12px;
+}
+
+#datenschutz h1 {
+	font-family: 'Berlin';
+	font-size: 48px;
+	letter-spacing: 3px;
+}
+
+#datenschutz a {
+	font-family: 'Berlin';
+	font-size: 24px;
+	letter-spacing: 3px;
+}
+
+#datenschutz a:not(hover) {
+	color: rgb(200,200,200);
+}
+
+#datenschutz a:hover {
+	color: rgb(255, 255, 255);
+}
