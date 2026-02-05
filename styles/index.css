@@ -172,6 +172,11 @@ video {
 	left: 8px;
 }
 
+#contact-header {
+	font-size: 42px;
+	letter-spacing: 4px;
+}
+
 #contact {
 	border-style: dashed;
 	border-radius: 35px;
