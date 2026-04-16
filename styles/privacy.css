@@ -1,3 +1,5 @@
+@import url('../styles/theme.css');
+
 #datenschutz {
 	font-family: 'RobotoMono';
 	padding: 48px;
@@ -31,7 +33,7 @@
 	letter-spacing: 4px;
 }
 
-#datenschutz a:not(hover) {
+#datenschutz a:not(:hover) {
 	color: rgb(200,200,200);
 }
 
