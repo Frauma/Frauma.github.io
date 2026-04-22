@@ -74,6 +74,10 @@ video {
 	left: 8px;
 }
 
+#frauma-logo img {
+	width: 13%;
+}
+
 #contact-header {
 	font-size: 42px;
 	letter-spacing: 4px;
